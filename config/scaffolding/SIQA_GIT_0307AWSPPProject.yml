@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_git_0307awspp.integrations:Call_refData
+  packages:
+  - name: SIQA_GIT_0307AWSPPProject
+    version: "1.0"
+- serviceName: project.siqa_git_0307awspp.referencedata:refData
+  packages:
+  - name: SIQA_GIT_0307AWSPPProject
+    version: "1.0"
 configurationVariables:
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
